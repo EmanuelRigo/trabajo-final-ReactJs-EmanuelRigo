@@ -1,13 +1,115 @@
-body {
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header {
+  background-color: black;
+  padding: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo img {
+  height: 100px;
+  margin-left: 10px;
+  filter: invert(1);
+}
+
+.main {
+  height: 80vh;
+  background-color: whitesmoke;
+  padding: 10px;
+}
+
+.footer {
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+
+#root {
+  background-color: aqua;
+  height: 100vh;
+}
+
+.nav {
+  color: white;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*/////////////////////tarjetas/////////////////////////////*/
+
+.item {
+  margin: 0;
+  padding: 0;
+  border: solid 1px black;
+  width: 250px;
+  height: 450px;
+  background: gray;
+  box-sizing: border-box;
+}
+.genero {
+  text-align: center;
+  width: 100%;
+  height: 30px;
+  background: goldenrod;
+}
+.clase p {
+  margin: 0;
+}
+.img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.nombre {
+  text-align: center;
+}
+.boton {
+  width: 100%;
+  height: 35px;
+  background: black;
+  color: goldenrod;
+  cursor: pointer;
+  margin: auto;
+}
+.precio {
+  text-align: center;
+  width: 100%;
+  height: 30px;
+  background-color: white;
+}
+.detalles {
+  width: 100%;
+  height: 10px;
+  background: black;
+  color: goldenrod;
+  cursor: pointer;
+  text-align: center;
+}
+
+/*/////////////GRID CONTAINER////////////////////*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  grid-gap: 20px;
+  grid-auto-rows: 450px;
+  grid-auto-flow: dense;
+  width: 100%;
+  padding: 25px;
+  justify-content: center;
+  margin-top: 50px;
 }
